@@ -1,0 +1,31 @@
+/* Estiliza a lista para remover o estilo padrão */
+.minha-lista {
+    list-style: none; /* Remove os marcadores padrão */
+    padding: 0;
+}
+
+/* Adiciona um marcador personalizado */
+.minha-lista li {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 18px;
+    position: relative;
+}
+
+/* Adiciona um marcador antes de cada item */
+.minha-lista li::before {
+    content: "$";
+    color: blue;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Cor de fundo diferente para itns pares */
+.minha-lista li::nth-child(even){
+    background-color: #f0f0f0;
+}
+
+/* Cor de fundo diferente para itens impares */
+.minha-lista li:nth-child(odd){
+    background-color: #d0e8ff;
+}

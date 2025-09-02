@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Calças - Pedido</title>
+</head>
+
+<body>
+    <h2>Formulário de Compra - Loja de Calças</h2>
+
+    <form method="get" action="pedido.jsp">
+        <!--Nome-->
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <!--Email-->
+        <label for="email" Email:></label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!--Tmanho da camisa-->
+        <label for="tamanho">Tamanho da Calça:</label>
+        <select id="tamanho" name="tamanho">
+            <option value="pp">PP</option>
+            <option value="p">P</option>
+            <option value="m">M</option>
+            <option value="g">G</option>
+            <option value="gg">GG</option>
+        </select>
+        <br><br>
+
+        <!--Cor da Camisa-->
+        <label>Escolha a cor:</label>
+        <input type="radio" id="branca" name="cor" value="branca">
+        <label for="branca">Branca</label>
+        <input type="radio" id="preta" name="cor" value="preta">
+        <label for="preta">Preta</label>
+        <input type="radio" id="azul" name="cor" value="azul">
+        <label for="azul">Azul</label>
+        <br><br>
+
+        <!--Tipo de Modelo-->
+        <label>Modelo:</label>
+        <input type="checkbox" id="basica" name="modelo" value="basica">
+        <label for="basica">Básica</label>
+        <input type="checkbox" id="estampada" name="modelo" value="estampada">
+        <label for="estampada">Estampada</label>
+        <input type="checkbox" id="polo" name="modelo" value="Tecido">
+        <label for="polo">Tecido</label>
+        <br><br>
+
+        <!--Data de compra-->
+        <label for="dataCompra">Data da compra</label>
+        <input type="date" id="datacompra" name="datacompra">
+        <br><br>
+
+        <!--observações-->
+        <label for="observações">Observações:</label>
+        <textarea id="observações" rows="4" placeholder="Detalhes adicionais sobre o pedido..."></textarea>
+        <br><br>
+
+        <!--Botão de envio-->
+        <input type="submit" value="finalizar pedido">
+    </form>
+</body>
+
+</html>
